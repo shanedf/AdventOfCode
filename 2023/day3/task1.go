@@ -52,7 +52,6 @@ func main() {
 				max = 139
 			}
 			if ln > 0 {
-				fmt.Println(ln-1, idx, val, lines[ln-1][min:max])
 				if strings.ContainsAny(lines[ln-1][min:max], specials) {
 					part = nums[ln][idx]
 					flag = true
