@@ -1,4 +1,4 @@
-package main
+package day2
 
 import (
 	"bufio"
@@ -9,8 +9,8 @@ import (
 	"strings"
 )
 
-func main() {
-	file, err := os.Open("input.txt")
+func Task1() {
+	file, err := os.Open("day2/input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}

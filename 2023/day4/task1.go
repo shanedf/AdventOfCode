@@ -1,16 +1,18 @@
-package main
+package day4
 
 import (
 	"bufio"
+	"fmt"
 	"log"
+	"math"
 	"os"
 	"regexp"
 	"slices"
 	"strings"
 )
 
-func main() {
-	file, err := os.Open("input.txt")
+func Task1() {
+	file, err := os.Open("day4/input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -49,6 +51,9 @@ func main() {
 				matches[card] = append(matches[card], v)
 			}
 		}
+		matched := len(matches[card])
+		score := math.Pow(2, float64(matched))
+		fmt.Println("there were", matched, "matches on card", card+1, "scoring", score, "points")
 		if err := scanner.Err(); err != nil {
 			log.Fatal(err)
 		}
