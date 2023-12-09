@@ -11,5 +11,6 @@ func main() {
 	// day2.Task2()
 	// day3.Task1()
 	// day3.Task2()
-	day4.Task1()
+	// day4.Task1()
+	day4.Task2()
 }
