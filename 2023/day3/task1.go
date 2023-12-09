@@ -11,7 +11,7 @@ import (
 )
 
 func Task1() {
-	file, err := os.Open("input.txt")
+	file, err := os.Open("day3/input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
